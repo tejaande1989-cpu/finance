@@ -6,7 +6,37 @@ Welcome to Finance! This guide will help you understand how to use our applicati
 Finance is a Bloomberg-grade terminal powered by AI, presented as a simple chat interface. It allows you to access institutional-grade financial data, run complex analyses, and create stunning visualizations—all just by asking questions in plain English.
 
 ## Getting Started
-To use the application, simply open your browser and navigate to the Finance app. You'll be presented with a chat interface where you can start typing your questions.
+
+You have two ways to start using the Finance App:
+
+### Option 1: Use the Live Demo (Easiest)
+If you don't want to run the app on your computer, you can simply open your web browser and navigate to the live demo at:
+**[https://finance.valyu.ai](https://finance.valyu.ai)**
+*(Note: The live version may require Valyu credits to use).*
+
+### Option 2: Run it Locally on Your Computer (Free/Self-Hosted)
+If you want to run the application entirely on your own computer without needing credits, you can start it locally. Although this requires using a terminal, it is a very simple process!
+
+**Step 1: Open Your Terminal**
+- **On Mac:** Press `Command + Space`, type "Terminal", and hit Enter.
+- **On Windows:** Press the `Windows key`, type "cmd" or "Command Prompt", and hit Enter.
+
+**Step 2: Navigate to the App Folder**
+You need to tell the terminal to go to the folder where you downloaded the Finance app.
+- Type `cd ` (with a space at the end).
+- Drag the folder containing the Finance app from your file explorer directly into the terminal window. It will automatically paste the folder path for you.
+- Hit Enter.
+
+**Step 3: Start the App**
+- Type the following command and hit Enter:
+  `npm run dev`
+- The terminal will display some loading text. Leave this window open in the background!
+
+**Step 4: Open Your Browser**
+Once the app has started in the terminal, open your web browser (like Chrome or Safari) and go to this exact address:
+**http://localhost:3000**
+
+You will automatically be logged in and can start chatting! When you are done, you can close the terminal window to stop the application.
 
 ## Input Formats
 **You do not need to upload Excel files, PDFs, or any other documents.**
