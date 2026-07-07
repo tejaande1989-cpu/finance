@@ -43,6 +43,14 @@ Change it so it looks exactly like this, with nothing after the equals sign:
 `OPENAI_API_KEY=`
 *(Alternatively, you can just delete that entire `OPENAI_API_KEY` line from the file!).*
 
+**Fixing the "AI Gateway authentication failed" Error**
+If you have emptied your OpenAI key, but you get a red error saying *"AI Gateway authentication failed"*, this means **the app tried to connect to your free local Ollama AI, but it couldn't find it**. Because it couldn't find Ollama, it tried to fallback to OpenAI (which you disabled), resulting in this confusing error.
+
+To fix this:
+1. Make sure you actually opened the Ollama application on your computer so it is running in the background.
+2. You must download a model for Ollama to use. Open your terminal, type `ollama pull qwen2.5:7b`, and hit Enter. Wait for the download to finish completely.
+3. Once finished, go back to your Finance app in the browser, refresh the page, and try again!
+
 **Restarting the App**
 Any time you make a change to the `.env.local` file, you must restart the app:
 1. Go to your terminal window.
