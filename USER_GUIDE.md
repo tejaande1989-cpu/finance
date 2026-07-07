@@ -21,11 +21,21 @@ You will need to create free accounts on two websites to get these keys:
 3. Copy that file and paste it into the exact same folder.
 4. Rename the newly copied file to exactly: `.env.local`
 
-**Step 3: Add Your Keys**
+**Step 3: Add Your Keys (Pay Close Attention!)**
 1. Open your new `.env.local` file using a simple text editor (like Notepad on Windows, or TextEdit on Mac).
-2. Look for the line that says `VALYU_API_KEY=valyu_your_api_key_here` and replace the text after the equals sign with your real Valyu API key.
-3. Look for the line that says `DAYTONA_API_KEY=your_daytona_api_key_here` and replace the text with your real Daytona API key.
+2. Look for the line that says `VALYU_API_KEY=valyu_your_api_key_here`.
+   - **IMPORTANT:** You must delete the text `valyu_your_api_key_here` entirely and paste your *real* secret code from Valyu. Do not leave the placeholder text!
+3. Look for the line that says `DAYTONA_API_KEY=your_daytona_api_key_here`.
+   - **IMPORTANT:** Delete `your_daytona_api_key_here` entirely and paste your *real* secret code from Daytona.
 4. Save the file and close it. You are now ready to start the app!
+
+---
+**What about OpenAI? (Optional)**
+You might notice a line for `OPENAI_API_KEY`. **You do not need to use OpenAI!** If you are getting errors like "Incorrect API key provided" (because you used placeholder text like `sk-your_openai_api_key_here`), or if you don't want to pay for OpenAI, you can completely ignore this line.
+
+Instead of OpenAI, this app fully supports **100% free, private local AI** using a tool called Ollama or LM Studio. If you install Ollama (from [ollama.com](https://ollama.com)), the app will automatically use your computer's free local AI instead of OpenAI, saving you money and avoiding key errors.
+
+---
 
 ## Getting Started
 
