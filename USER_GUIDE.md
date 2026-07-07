@@ -27,13 +27,27 @@ You will need to create free accounts on two websites to get these keys:
    - **IMPORTANT:** You must delete the text `valyu_your_api_key_here` entirely and paste your *real* secret code from Valyu. Do not leave the placeholder text!
 3. Look for the line that says `DAYTONA_API_KEY=your_daytona_api_key_here`.
    - **IMPORTANT:** Delete `your_daytona_api_key_here` entirely and paste your *real* secret code from Daytona.
-4. Save the file and close it. You are now ready to start the app!
+4. Save the file and close it.
 
 ---
-**What about OpenAI? (Optional)**
-You might notice a line for `OPENAI_API_KEY`. **You do not need to use OpenAI!** If you are getting errors like "Incorrect API key provided" (because you used placeholder text like `sk-your_openai_api_key_here`), or if you don't want to pay for OpenAI, you can completely ignore this line.
+**What about OpenAI? (Free Local Alternative)**
+You might notice a line for `OPENAI_API_KEY`. **You do not need to use OpenAI or pay for credits!**
 
-Instead of OpenAI, this app fully supports **100% free, private local AI** using a tool called Ollama or LM Studio. If you install Ollama (from [ollama.com](https://ollama.com)), the app will automatically use your computer's free local AI instead of OpenAI, saving you money and avoiding key errors.
+Instead of OpenAI, this app fully supports **100% free, private local AI** using a tool called Ollama. If you install Ollama (from [ollama.com](https://ollama.com)), the app will automatically use your computer's free local AI instead.
+
+**CRITICAL STEP if you are using Ollama instead of OpenAI:**
+If you leave the fake dummy text (`sk-your_openai_api_key_here`) in your file, the app will *think* you are trying to use OpenAI and will crash with an "Incorrect API key" error.
+
+To fix this, you must **completely empty** the OpenAI line in your `.env.local` file.
+Change it so it looks exactly like this, with nothing after the equals sign:
+`OPENAI_API_KEY=`
+*(Alternatively, you can just delete that entire `OPENAI_API_KEY` line from the file!).*
+
+**Restarting the App**
+Any time you make a change to the `.env.local` file, you must restart the app:
+1. Go to your terminal window.
+2. Press `Control + C` (on both Mac and Windows) to stop the server.
+3. Type `npm run dev` and hit Enter to start it again.
 
 ---
 
