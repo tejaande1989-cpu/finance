@@ -5,6 +5,28 @@ Welcome to Finance! This guide will help you understand how to use our applicati
 ## Introduction
 Finance is a Bloomberg-grade terminal powered by AI, presented as a simple chat interface. It allows you to access institutional-grade financial data, run complex analyses, and create stunning visualizations—all just by asking questions in plain English.
 
+## Adding API Keys (Important Setup)
+Before the app can search the internet or run calculations, it needs permission to access certain databases. We do this using "API Keys" (think of them like special passwords).
+
+Here is exactly how to add your API keys:
+
+**Step 1: Get your API Keys**
+You will need to create free accounts on two websites to get these keys:
+- **Valyu API Key:** Go to [platform.valyu.ai](https://platform.valyu.ai) to get a key for financial data.
+- **Daytona API Key:** Go to [app.daytona.io](https://app.daytona.io) to get a key that allows the AI to draw charts and run calculations securely.
+
+**Step 2: Create a Settings File**
+1. Open the folder where you downloaded the Finance app on your computer.
+2. Find the file named `.env.example`.
+3. Copy that file and paste it into the exact same folder.
+4. Rename the newly copied file to exactly: `.env.local`
+
+**Step 3: Add Your Keys**
+1. Open your new `.env.local` file using a simple text editor (like Notepad on Windows, or TextEdit on Mac).
+2. Look for the line that says `VALYU_API_KEY=valyu_your_api_key_here` and replace the text after the equals sign with your real Valyu API key.
+3. Look for the line that says `DAYTONA_API_KEY=your_daytona_api_key_here` and replace the text with your real Daytona API key.
+4. Save the file and close it. You are now ready to start the app!
+
 ## Getting Started
 
 You have two ways to start using the Finance App:
@@ -15,7 +37,7 @@ If you don't want to run the app on your computer, you can simply open your web 
 *(Note: The live version may require Valyu credits to use).*
 
 ### Option 2: Run it Locally on Your Computer (Free/Self-Hosted)
-If you want to run the application entirely on your own computer without needing credits, you can start it locally. Although this requires using a terminal, it is a very simple process!
+If you want to run the application entirely on your own computer without needing credits, you can start it locally. Ensure you have completed the **Adding API Keys** steps above first. Although this requires using a terminal, it is a very simple process!
 
 **Step 1: Open Your Terminal**
 - **On Mac:** Press `Command + Space`, type "Terminal", and hit Enter.
